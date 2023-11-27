@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto:wght@300;400&display=swap');
+
+body {
+    background-color: gray;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    margin: 1em 2em;
+    padding: 1em;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-family: Nunito, sans-serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0em 1em;
+}
+
+h2 a {
+    text-decoration: underline;
+    color: black;
+}
+
+h1 {
+    background-image: url("../images/others/lab-equipment.jpg");
+    background-size: 600px;
+    background-position: bottom;
+    margin: 0em;
+    padding: 1em;
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(38, 97, 156);
+    margin: 0em;
+    padding: 0.5em;
+    text-align: center;
+}
