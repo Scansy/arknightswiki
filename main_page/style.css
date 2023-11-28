@@ -7,8 +7,15 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-img {
+article img {
     width: 100%;
+    height: 400px;
+}
+
+header img {
+    width: 5%;
+    height: 5%;
+    padding-top: 1em;
 }
 
 article {
@@ -36,13 +43,20 @@ h2 a {
     color: black;
 }
 
-h1 {
+header {
     background-image: url("../images/others/lab-equipment.jpg");
     background-size: 600px;
     background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
     margin: 0em;
     padding: 1em;
     text-align: center;
+    width: 100%;
 }
 
 h2 {
@@ -50,4 +64,5 @@ h2 {
     margin: 0em;
     padding: 0.5em;
     text-align: center;
+    width: 100%;
 }
