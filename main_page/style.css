@@ -21,7 +21,7 @@ a, h2 {
     color: white;
 }
 
-article, h2, img {
+article, img {
     border-radius: 5px;
 }
 
@@ -155,11 +155,12 @@ section {
 
     #grid article {
         width: 30%;
+        height: 30%;
     }
 
     #grid img {
         width: 100%;
-        height: 40vw;
+        height: 40vh;
     }
 
     #grid article:hover {
@@ -184,8 +185,12 @@ section {
         border-bottom: none;
     }
 
-    nav a:hover {
+    nav a:hover, #references a:hover {
         border-bottom: 2px solid white;
+    }
+
+    #references a {
+        border-bottom: none;
     }
 
     section figure img {
