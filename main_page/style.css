@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Roboto:wght@300;400&display=swap');
 
 body {
     background-color: gray;
@@ -120,6 +120,7 @@ nav li {
     text-align: center;
     margin-bottom: 0.25rem;
     /* padding: 0.25rem; */
+    font-weight: bold;
 }
 
 footer, header nav {
