@@ -14,10 +14,15 @@ h1, h2, h3 {
 
 article {
     color: black;
+    box-shadow: 5px 5px 5px rgb(53, 53, 53);
 }
 
 a, h2 {
     color: white;
+}
+
+article, h2, img {
+    border-radius: 5px;
 }
 
 .row1 img, .row2 img {
@@ -114,13 +119,10 @@ nav a {
 }
 
 nav li {
-    /* background-color: white; */
     border-bottom: 2px solid white;
     width: 100%;
     text-align: center;
     margin-bottom: 0.25rem;
-    /* padding: 0.25rem; */
-    font-weight: bold;
 }
 
 footer, header nav {
@@ -145,25 +147,68 @@ section {
 }
 
 
-@media screen and (min-width: 1200px) {
-    /* #introduction {
+@media screen and (min-width: 800px) {
+    .row1, .row2 {
+        display: flex;
         flex-direction: row;
     }
 
-    #introduction section {
-        width: 100%;
+    #grid article {
+        width: 30%;
     }
 
-    article {
-        display: flex;
-        flex-direction: column;
-        background-color: gainsboro;
-        margin: 1em 2em;
-        padding: 1em;
-        align-items: center;
-    } */
+    #grid img {
+        width: 100%;
+        height: 40vw;
+    }
+
+    #grid article:hover {
+        transform: scale(1.03, 1.03);
+        transition: transform 0.3s;
+    }
 
     #introduction figure {
         max-width: 35%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li:not(nav li:nth-of-type(3)) {
+        border-bottom: none;
+        border-right: 2px solid white;
+    }
+
+    nav li:nth-of-type(3) {
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    section figure img {
+        width: 20%;
+        text-align: center;
+    }
+
+    #synopsis img {
+        width: 50%;
+    }
+
+    section figure {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        border-bottom: none;
+    }
+
+    header h2 a:hover {
+        border-bottom: 2px solid white;
     }
 }
