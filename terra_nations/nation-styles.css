@@ -20,24 +20,10 @@ a, h2 {
     color: white;
 }
 
-.row1 img, .row2 img {
-    width: 50vh;
-    height: 50vh;
-}
-
 header img {
     width: 8%;
     height: 8%;
     padding-top: 1em;
-}
-
-article:not(#introduction) {
-    display: flex;
-    flex-direction: column;
-    background-color: gainsboro;
-    margin: 1em 2em;
-    padding: 1em;
-    align-items: center;
 }
 
 h1 a {
@@ -76,26 +62,8 @@ h2 {
     box-sizing: border-box;
 }
 
-#introduction {
-    background-color: gainsboro;
-    margin: 1em 2em;
-    padding: 1em;
-}
-
-#introduction figure {
-    display: block;
-    float: left;
-    box-sizing: border-box;
-    width: 40%;
-}
-
-figcaption {
-    text-align: center;
-}
-
-figure img {
-    /* object-fit: contain; */
-    width: 100%;
+ul {
+    padding-left: 0;
 }
 
 nav ul {
@@ -103,7 +71,6 @@ nav ul {
     flex-direction: column;
     list-style-type: none;
     align-items: center;
-    padding-left: 0;
     margin: 0.4em 0;
 }
 
@@ -114,12 +81,10 @@ nav a {
 }
 
 nav li {
-    /* background-color: white; */
     border-bottom: 2px solid white;
     width: 100%;
     text-align: center;
     margin-bottom: 0.25rem;
-    /* padding: 0.25rem; */
 }
 
 footer, header nav {
@@ -136,33 +101,91 @@ section {
     margin-bottom: 2em;
 }
 
-.section-title {
+.article-title {
     text-align: center;
     background-color: rgba(22, 22, 22, 0.541);
     /* width: 40%; */
     padding: 0.5em 0;
 }
 
+.flags {
+    width: 30vh;
+    height: 30vh;
+    border: 3px dashed rgba(22, 22, 22, 0.541);
+}
+
+.quick-facts {
+    margin: 1em;
+    /* padding: 1em; */
+}
+
+.quick-facts p {
+    margin: 1em;
+}
+
+article {
+    background-color: gainsboro;
+    padding: 1em;
+}
+
+aside {
+    background-color: rgba(22, 22, 22, 0.541);
+    border: 5px solid rgba(0, 0, 0, 0.603);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0;
+}
+
+aside h3 {
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.character-portrait {
+    width: 70%;
+}
+
+.character-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.character-info ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-list {
+    width: 30%;
+    border-right: 2px solid rgba(0, 0, 0, 0.603);;
+
+}
+
+.info-data {
+    width: 70%;
+}
+
+.character-info ul li {
+    border-top: 2px solid rgba(0, 0, 0, 0.603);
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.603); */
+    /* margin-bottom: 1px; */
+    padding: 0.2em;
+}
+
+.character-info ul li:nth-of-type(4) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.603);
+}
+
 
 @media screen and (min-width: 1200px) {
-    /* #introduction {
-        flex-direction: row;
-    }
-
-    #introduction section {
-        width: 100%;
-    }
-
-    article {
-        display: flex;
-        flex-direction: column;
-        background-color: gainsboro;
-        margin: 1em 2em;
-        padding: 1em;
-        align-items: center;
-    } */
-
-    #introduction figure {
-        max-width: 35%;
-    }
+    
 }
